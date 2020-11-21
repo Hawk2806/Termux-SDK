@@ -1,1 +1,1 @@
-termux-create-package
+termux-create-package app.json

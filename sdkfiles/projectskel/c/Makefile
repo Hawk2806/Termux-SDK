@@ -2,7 +2,7 @@ CC=clang
 
 APPNAME=TermuxApp
 
-:build
+build:
 	$(CC) main.c -o $(APPNAME)
 dist:
-	termux-create-package
+	termux-create-package app.json
