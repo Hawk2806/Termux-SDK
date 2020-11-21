@@ -13,20 +13,10 @@ print("(3) Python Application")
 project_type = input("Select Project Type: ")
 
 if project_type == "1":
-    createproject(name,project_dir,"C")
+    os.system("~/.sdkfiles/buildscripts/createcproject.sh {0} {1}".format(project_dir,name))
 elif project_type == "2":
-    createproject(name,project_dir,"CXX")
+    os.system("~/.sdkfiles/buildscripts/createcxxproject.sh {0} {1}".format(project_dir,name))
 elif project_type == "3":
-    createproject(name,project_dir,"PYTHON")
+    os.system("~/.sdkfiles/buildscripts/createpythonproject.sh {0} {1}".format(project_dir,name))
 else:
     print("Invalid Project Type")
-
-def createproject(arg1,arg2,arg3):
-    if arg3 == "PYTHON":
-        os.system("~/.sdkfiles/buildscripts/createpythonproject.sh {0} {1}".format(arg2,arg1))
-    elif arg3 == "CXX":
-        os.system("~/.sdkfiles/buildscripts/createcxxproject.sh {0} {1}".format(arg2,arg1))
-    elif arg3 == "C":
-        os.system("~/.sdkfiles/buildscripts/createcproject.sh {0} {1}".format(arg2,arg1))
-    else:
-        pass
