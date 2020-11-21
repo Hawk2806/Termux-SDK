@@ -1,0 +1,9 @@
+{
+    "name":"termuxapp",
+    "version":"1.0",
+    "arch":"all",
+    "depends": ["llvm"],
+    "files" : {
+        "TermuxApp": "/bin/TermuxApp"
+    }
+}

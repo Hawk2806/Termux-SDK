@@ -1,0 +1,9 @@
+{
+    "name":"termuxapp",
+    "version":"1.0",
+    "arch":"all",
+    "depends": ["python"],
+    "files" : {
+        "TermuxApp.py": "/bin/TermuxApp"
+    }
+}
